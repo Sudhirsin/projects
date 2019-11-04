@@ -86,6 +86,7 @@ input{
     float:left;
 }
 
+
 /* Orders  */
 .ordercontent{
     display:grid;
@@ -99,3 +100,108 @@ input{
     text-align: center;
 }
 
+/* Media Queries */
+@media (max-width:600px){
+    *{
+        font-family:'Lobster Two', cursive;
+    }
+    .container{
+        width:100%;
+    }
+    .header{
+        width:100%;
+        height:50px;
+        background: #EC407A;
+    }
+    #logo{
+        float:left;
+    }
+    #logo img{
+        width:25px;
+        height:25px;
+        margin-top:2px;
+    }
+    #logotitle{
+        float:left;
+        margin-top:2px;
+    }
+    input{
+        float:left;
+        margin-top:2px;
+        width:40px;
+        height:20px;
+        font-size: 10px;
+        margin-left:10px;
+        border-radius:1px;
+    }
+    .rightnav{
+        float:right;;
+    }
+    .rightnav ul li{
+        list-style-type: none;
+        display:inline;
+        font-size: 10px;
+        margin:2px;
+        text-decoration: none;
+    }
+    .rightnav li a{
+        text-decoration: none;
+        color:black;
+    }
+    .verticaldiv{
+        width: 20%;
+        height:150px;
+        float:left;
+        background-image: url("resources/verimg.jpg");
+    }
+    .fishcategory{
+        text-align: center;
+        font-size:10px;
+    }
+    .fishcategory ul li{
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .content{
+        width: 80%;
+        height:250px;
+        float:left;
+        background:#7986CB;
+    }
+    .fishimg{
+        width:60px;
+        height:40px;
+        margin:2px;
+        float:left;
+    }
+    .fishtype{
+        text-align:center;
+        font-size: 10px;
+        color:green;
+    }
+    .contactus{
+        text-align: center;
+        font-size: 10px;;
+    }
+    #copyrightimg{
+        width:20px;
+        height:20px;
+    }
+    .footer{
+        float:left;
+    }
+    
+    
+    /* Orders  */
+    .ordercontent{
+        display:grid;
+        grid-gap:20px;
+        grid-template-columns: 300px 100px 100px 100px;
+        grid-template-rows: 50px 250px;
+    }
+    .ordercontent div{
+        margin:5px;
+        font-size: 25px;
+        text-align: center;
+    }
+}

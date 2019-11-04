@@ -1,0 +1,23 @@
+body{
+    background-image: url("resources/register.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:red;
+}
+#text{
+    text-align: center;
+    font-size: 35px;
+}
+.register {
+      display: grid;
+      grid-template-columns: 150px 250px;
+      grid-template-rows: 30px 30px;
+      justify-content: center;
+      grid-area: 9 / 1 / span 1 /span 2;
+ }
+.register div{
+      grid-gap:20px;
+ }
+ input{
+     text-align: center;
+ }
