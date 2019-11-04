@@ -1,0 +1,101 @@
+*{
+    font-family:'Lobster Two', cursive;
+}
+.container{
+    width:100%;
+}
+.header{
+    width:100%;
+    height:100px;
+    background: #EC407A;
+}
+#logo{
+    float:left;
+}
+#logo img{
+    width:80px;
+    height: 80px;
+    margin-top:10px;
+}
+#logotitle{
+    float:left;
+    margin-top:30px;
+}
+input{
+    float:left;
+    margin-top:25px;
+    width:300px;
+    height:50px;
+    font-size: 20px;
+    margin-left:200px;
+    border-radius:5px;
+}
+.rightnav{
+    float:right;;
+}
+.rightnav ul li{
+    list-style-type: none;
+    display:inline;
+    font-size: 30px;
+    margin:5px;
+    text-decoration: none;
+}
+.rightnav li a{
+    text-decoration: none;
+    color:black;
+}
+.verticaldiv{
+    width: 20%;
+    height:500px;
+    float:left;
+    background-image: url("resources/verimg.jpg");
+}
+.fishcategory{
+    text-align: center;
+    font-size:25px;
+}
+.fishcategory ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+.content{
+    width: 80%;
+    float:left;
+    background:#7986CB;
+}
+.fishimg{
+    width:200px;
+    height:200px;
+    margin:5px;
+    float:left;
+}
+.fishtype{
+    text-align:center;
+    font-size: 25px;
+    color:green;
+}
+.contactus{
+    text-align: center;
+    font-size: 25px;;
+}
+#copyrightimg{
+    width:20px;
+    height:20px;
+}
+.footer{
+    float:left;
+}
+
+/* Orders  */
+.ordercontent{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: 300px 100px 100px 100px;
+    grid-template-rows: 50px 250px;
+}
+.ordercontent div{
+    margin:5px;
+    font-size: 25px;
+    text-align: center;
+}
+

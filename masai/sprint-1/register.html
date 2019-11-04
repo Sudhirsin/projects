@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <style>
+        /* Register */
+         body{
+             background-image: url("resources/register.jpeg");
+             background-repeat: no-repeat;
+             background-size: 100%;
+             color:red;
+         }
+         #text{
+             text-align: center;
+             font-size: 35px;
+         }
+        .register {
+               display: grid;
+               grid-template-columns: 150px 250px;
+               grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+               justify-content: center;
+               grid-area: 9 / 1 / span 1 /span 2;
+          }
+        .register div{
+               grid-gap:20px;
+          }
+          input{
+              text-align: center;
+          }
+          
+        </style>
+    </head>
+    <body>
+        <div id="text">Register</div>
+        <br />
+        <br />
+        <div>
+            <div class="register">
+                    <div><label>First Name:</label></div>
+                    <div><input type="text"></div>
+                    <div><label>First Name:</label></div>
+                    <div><input type="text"></div>
+                    <div>Age:</div>
+                    <div><input type="date"></div>
+                    <div>Address:</div>
+                    <div><textarea></textarea></div>
+                    <div>Email:</div>
+                    <div><input type="email"></div>
+                    <div>Mobile No.:</div>
+                    <div><input type="number"></div>
+                    <div>Password:</div>
+                    <div><input type="password"></div>
+                    <div>Confirm Password:</div>
+                    <div><input type="password"></div>
+    
+                    <input type="submit" value="Submit">
+                    
+            </div>
+        </div>
+    </body>
+</html>

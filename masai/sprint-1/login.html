@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <style>
+        /* Register */
+         body{
+             background-image: url("resources/register.jpeg");
+             background-repeat: no-repeat;
+             background-size: 100%;
+             color:red;
+         }
+         #text{
+             text-align: center;
+             font-size: 35px;
+         }
+        .register {
+               display: grid;
+               grid-template-columns: 150px 250px;
+               grid-template-rows: 30px 30px;
+               justify-content: center;
+               grid-area: 9 / 1 / span 1 /span 2;
+          }
+        .register div{
+               grid-gap:20px;
+          }
+          input{
+              text-align: center;
+          }
+          
+        </style>
+    </head>
+    <body>
+        <div id="text">Login</div>
+        <br />
+        <br />
+        <div>
+            <div class="register">
+                    <div><label>Email/Mobile No.:</label></div>
+                    <div><input type="text"></div>
+                    <div>Password:</div>
+                    <div><input type="password"></div>
+                    <input type="submit" value="Log In">
+                    
+            </div>
+        </div>
+    </body>
+</html>
