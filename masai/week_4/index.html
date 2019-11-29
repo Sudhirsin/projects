@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Marks Recorder</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="container">
+            <div class="nav">
+                <img id="imglogo" src="resources/logo.png" alt="schoolLogo"/>
+                <div id="schoolName">School Management System</div>
+            </div>
+            <div class="sidebar">
+                <h2>Student Details</h2>
+                <div>
+                    <form>
+                        <table>
+                            <tr>
+                                <td><label>Name:</label></td>
+                                <td><input type="text" id="name" placeholder="Enter your Name"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Grade:</label></td>
+                                <td><input type="text" id="grade" placeholder="Enter your Grade"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Section:</label></td>
+                                <td><input type="text" id="section" placeholder="Enter your Section"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Exam Type:</label></td>
+                                <td><input type="text" id="examtype" placeholder="Enter your Exam Type"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Subject:</label></td>
+                                <td><input type="text" id="subject" placeholder="Enter your Subjet"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Marks:</label></td>
+                                <td><input type="number" id="marks" placeholder="Enter your Marks"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" class="filterStdGrade" value="Submit" onclick="stdDetails()" id="btnSubmit"/></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="contentArea">
+                <div id="filter">
+                    <h2>Filter Section</h2>
+                    <label>Filter:</label>
+                    <select class="selectFilter" id="selOption">
+                        <option value="">--Select Grade--</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <input type="submit" class="filterStdGrade" value="Filter" id="btnGradeDetail" onclick="selectGradeFilter()" />
+                    </select>
+                    <br />
+                    <br />
+                    <br />
+                    <hr />
+                  
+                    <div id="result">
+                        <h2>Student Performance</h2>
+                        <label>Filter:</label>
+                        <select class="selectFilter" id="selName">
+                            <!-- <option value="">--Select--</option>
+                             <option value="Ravi">Ravi</option>
+                             <option value="Ashish">Ashish</option>
+                             <option value="Abhinav">Abhinav</option>
+                             <option value="Harshit">Harshit </option> -->
+                        </select>
+                            <input type="submit" value="Details" id="btnStdDetails" onclick="findDeatils()" />
+                    </div>
+                </div>
+                
+                <div id="divResult">
+                    <h2>Result</h2>
+                    <div id="showResult"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
