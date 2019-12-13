@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italianno&display=swap" rel="stylesheet">
+    <title>Once Upon a Bottle</title>
+    <style>
+        .box1{
+            width:350px;
+            height:200px;
+        }
+        .box2{
+            width:350px; 
+            height:420px;
+        }
+        .box3{
+            width:250px;
+            height:300px;
+        }
+        .search{
+            width:1110px;
+            height:300px
+        }
+        .imgSearch{
+            width:300px;
+            height:350px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- logo NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <img class="mx-3 justify-content-center" src="resources/logoimg2.jpg" style="width:100px; height:80px;" />
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><h1 style="font-family: 'Italianno', cursive;" class="font-weight-bold text-center">D'Madeera</h1></a>
+                </li>
+                <li class="nav-item active">
+                    <img  class="px-3" src="resources/serving-wine-in-a-glass-with-a-bottle.png">
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">ALL CATEGORY </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">WINE SHOP </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">BEER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">WHISKY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- IMAGE CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="resources/f.jpg" class="carouselImg w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="resources/b.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="resources/c.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="resources/ee.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="resources/ff.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- search for wine -->
+    <br />
+    <div class="container">
+        <div class="row text-center justify-content-center">
+            <div class="col-12">
+                <div class="card">
+                    <img src="resources/blursearch.jpg" class="search card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h1 class="card-title mb-1">Search <i>for</i> Cocktail Recipes</h1>
+                        <h4 class="font-weight-bold py-3"><i>Search cocktail by Letter </i></h4>
+                        <form class="form-inline justify-content-center my-lg-0">
+                            <input id="search" class="form-control border-dark mr-sm-2" type="search" placeholder="Search by letter...."
+                                aria-label="Search">
+                            <button id="btnSearch" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                        <h4 class="font-weight-bold py-3"><i>Search cocktail by name </i></h4>
+                        <form class="form-inline justify-content-center my-lg-0">
+                            <input id="searchByName" class="form-control border-dark mr-sm-2" type="search" placeholder="For Example Margarita...."
+                                aria-label="Search">
+                            <button id="btnSearchByName" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row mt-2 justify-content-center" id="dataShow">
+            <!-- <div class="col">
+                <div class="card" style="width: 200px;">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/tqpvqp1472668328.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+<br />
+    <!-- new image section to showcase multiple item -->
+    <br />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-8 text-center">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid box1 rounded" src="resources/s1.jpeg" alt="" />
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid box1 rounded" src="resources/s2.jpeg" alt="" />
+                    </div>
+                </div>
+                <div class="row py-4">
+                    <div class="col">
+                        <img class="img-fluid box1 rounded" src="resources/s3.jpeg" alt="" />
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid box1 rounded" src="resources/s4.jpeg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <img class="img-fluid box2 rounded" src="resources/s6.jpeg" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- NEW ARRIVAL -->
+    <br />
+    <br />
+    <div class="contanier-fluid">
+        <h2 class="font-weight-bold text-center mb-4">New Arrivals</h2>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="resources/mayacamas.png" class="box3 img-fluid card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="font-weight-bold px-2">Mayacamas</h4>
+                        <p class="card-text px-2 lead">Price: $125</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="resources/ramnista.png" class="box3 img-fluid card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="font-weight-bold px-2">Ramnista</h4>
+                        <p class="card-text px-2 lead">Price: $29</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="resources/tablas.png" class="box3 img-fluid card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="font-weight-bold px-2">Tablas Creek</h4>
+                        <p class="card-text px-2 lead">Price: $43</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="resources/dalminano.png" class="box3 img-fluid card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="font-weight-bold px-2">Dalminano</h4>
+                        <p class="card-text px-2 lead">Price: $43</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <img src="resources/butterknif.png" class="box3 img-fluid card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="font-weight-bold px-2">Butternife</h4>
+                            <p class="card-text px-2 lead">Price: $125</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="resources/oldmonk.png" class="box3 img-fluid card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="font-weight-bold px-2">Old Monk</h4>
+                            <p class="card-text px-2 lead">Price: $29</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="resources/wine_gri2016.jpg" class="box3 img-fluid card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="font-weight-bold px-2">Saint Joseph</h4>
+                            <p class="card-text px-2 lead">Price: $200</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="resources/bolney.jpg" class="box3 img-fluid card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="font-weight-bold px-2">Bolney</h4>
+                            <p class="card-text px-2 lead">Price: $160</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
