@@ -55,16 +55,11 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" id="register" href="#">Rgister</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="login.html" tabindex="-1">Login</a>
+                                <!-- <a class="nav-link text-white" href="index.html">Home</a> -->
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
+                            <label class="mx-2 text-white font-weight-bold">Search</label>
                             <input class="form-control mr-sm-2" type="search" id="search" placeholder="Movie Search" aria-label="Search">
                             <button class="btn btn-outline-danger my-2 my-sm-0" id="btnSearch" type="submit">Search</button>
                         </form>
@@ -92,46 +87,6 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-    </div>
-    <!-- register -->
-    <div class="container" id="regPage">
-        <div class="row">
-            <div class="col center text-white">
-                <div class="col-6">
-                    <div class="col border border-dark bg-dark">
-                        <form id="sendForm" name="person">
-                            <div class="form-group">
-                                <lable for="name">Name</lable>
-                                <input type="text" class="form-control formEle" id="name" placeholder="Enter name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control formEle" id="email" placeholder="Enter email">
-                            </div>
-                            <div class="from-group">
-                                <lable for="password">Password</lable>
-                                <input type="password" class="form-control formEle" placeholder="Enter password" id="password">
-                            </div>
-                            <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control formEle" id="username" placeholder="Enter username">
-                            </div>
-                            <div class="form-group">
-                                <label for="mobile">Mobile</label>
-                                <input type="text" class="form-control formEle" id="mobile" placeholder="Enter mobile">
-                            </div>
-                            <div class="form-group">
-                                <label for="description">Description</label>
-                                <input type="text" class="form-control formEle" id="description"
-                                    placeholder="Enter Description">
-                            </div>
-                            <button class="btn btn-outline-danger btn-dark" id="register">Register</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </div>
     <!-- image -->
@@ -223,7 +178,7 @@
             xhr.onload=function(){
                 if(xhr.status==200){
                     result=JSON.parse(xhr.response)
-                    // console.log(result)
+                    console.log(result)
                     displayData(result)
                 }else{
                     console.log("Error Code: "+xhr.status)
@@ -236,6 +191,7 @@
 
         function displayData(input){
             // alert('Hello')
+            console.log(input)
             $('.showData').show();
             tbody.textContent=""
             input.Search.forEach(function(ele){
